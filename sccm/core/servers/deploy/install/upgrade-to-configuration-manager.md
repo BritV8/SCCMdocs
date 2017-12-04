@@ -269,7 +269,7 @@ The following information applies only when you are upgrading a prior version li
 
 Before you upgrade a site, test a copy of that site's database for the upgrade.  
 
-To test the database for an upgrade, you first restore a copy of the site database to an instance of SQL Server that does not host a Configuration Manager site. The version of SQL Server that you use to host the database copy must be a version of SQL Server that the version of Configuration Manager supports that is the source of the database copy.  
+To test the database for an upgrade, you first restore a copy of the site database to an instance of SQL Server that does not host a Configuration Manager site. The version of SQL Server that you use to host the database copy must be a version of SQL Server that the version of Configuration Manager supports that is the source of the database copy. It also needs to be of the same SQL Server Collation.  
 
 Next, after you restore the site database, on the SQL Server computer, run Configuration Manager Setup from the source media folder for System Center Configuration Manager with the **/TESTDBUPGRADE** command-line option.  
 
